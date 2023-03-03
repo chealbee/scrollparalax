@@ -80,7 +80,10 @@ const GaleryLeft = () => {
         className="gallery__item"
         src={img1}
         alt="Alt"
-        style={{ opacity: +motionOpasityExit, translateX: notionTranslateExit }}
+        style={{
+          opacity: motionOpasityExit as any,
+          translateX: notionTranslateExit,
+        }}
         whileHover={{ scale: 1.03 }}
         transition={{ duration: 0.5 }}
       />
@@ -89,7 +92,7 @@ const GaleryLeft = () => {
         src={img2}
         alt="Alt"
         style={{
-          opacity: +motionOpasityExit1,
+          opacity: motionOpasityExit1 as any,
           translateX: notionTranslateExit1,
         }}
         whileHover={{ scale: 1.03 }}
@@ -119,7 +122,7 @@ const GaleryLeft = () => {
         src={img6}
         alt="Alt"
         style={{
-          opacity: +motionOpasityExit3,
+          opacity: motionOpasityExit3 as any,
           translateX: notionTranslateExit3,
         }}
         whileHover={{ scale: 1.03 }}

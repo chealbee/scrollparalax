@@ -27,7 +27,7 @@ const Header = () => {
         className="hero"
         src={hero}
         alt="hero"
-        style={{ opacity: +motionOpasity, translateY: translate2 }}
+        style={{ opacity: motionOpasity as any, translateY: translate2 }}
       />
       <div className="container">
         <div className="main-header">
