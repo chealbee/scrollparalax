@@ -14,7 +14,11 @@ const Header = () => {
 
   const translate = useTransform(springScrollY, someBorders, translateValues);
   const translate2 = useTransform(springScrollY, someBorders, translateValues2);
-  const opasity = useTransform(springScrollY, someBorders, opasityValues1);
+  const motionOpasity = useTransform(
+    springScrollY,
+    someBorders,
+    opasityValues1
+  );
 
   const MImage = motion(Image);
   return (
@@ -23,13 +27,13 @@ const Header = () => {
         className="hero"
         src={hero}
         alt="hero"
-        style={{ translateY: translate2, opacity: opasity }}
+        style={{ opacity: +motionOpasity, translateY: translate2 }}
       />
       <div className="container">
         <div className="main-header">
           <motion.h1
             className="main-title"
-            style={{ translateY: translate, opacity: opasity }}
+            style={{ translateY: translate, opacity: motionOpasity }}
           >
             creative scroll
           </motion.h1>

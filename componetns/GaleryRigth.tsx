@@ -94,7 +94,7 @@ const GaleryRigth = () => {
         src={img4}
         alt="Alt"
         style={{
-          opacity: motionOpasityExit1,
+          opacity: +motionOpasityExit1,
           translateX: notionTranslateExit1,
         }}
         whileHover={{ scale: 1.03 }}
@@ -105,7 +105,7 @@ const GaleryRigth = () => {
         src={img5}
         alt="Alt"
         style={{
-          opacity: motionOpasityExit2,
+          opacity: +motionOpasityExit2,
           translateX: notionTranslateExit2,
         }}
         whileHover={{ scale: 1.03 }}
@@ -116,7 +116,7 @@ const GaleryRigth = () => {
         src={img3}
         alt="Alt"
         style={{
-          opacity: motionOpasityExit3,
+          opacity: +motionOpasityExit3,
           translateX: notionTranslateExit3,
         }}
         whileHover={{ scale: 1.03 }}

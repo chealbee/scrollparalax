@@ -1,11 +1,7 @@
 import Head from "next/head";
 import Header from "@/componetns/Header";
 import Partfolio from "@/componetns/Partfolio";
-import { useScroll, motion, useTransform } from "framer-motion";
-
 export default function Home() {
-  const { scrollY } = useScroll();
-  const someBorders = [200, 400];
   return (
     <>
       <Head>
